@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AE7345B021921A4D0099275F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7345AF21921A4D0099275F /* AppDelegate.swift */; };
-		AE7345B221921A4D0099275F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7345B121921A4D0099275F /* ViewController.swift */; };
 		AE7345B521921A4D0099275F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7345B321921A4D0099275F /* Main.storyboard */; };
 		AE7345B721921A4F0099275F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7345B621921A4F0099275F /* Assets.xcassets */; };
 		AE7345BA21921A4F0099275F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7345B821921A4F0099275F /* LaunchScreen.storyboard */; };
 		AE7345C521921A4F0099275F /* PracTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7345C421921A4F0099275F /* PracTableViewTests.swift */; };
 		AE7345D021921A4F0099275F /* PracTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7345CF21921A4F0099275F /* PracTableViewUITests.swift */; };
+		AE7345DE21921B8D0099275F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7345DD21921B8D0099275F /* TableViewController.swift */; };
+		AE978A8D219B464C00117B7C /* Detalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE978A8C219B464C00117B7C /* Detalle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		AE7345AC21921A4D0099275F /* PracTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7345AF21921A4D0099275F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE7345B121921A4D0099275F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AE7345B421921A4D0099275F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE7345B621921A4F0099275F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE7345B921921A4F0099275F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		AE7345CB21921A4F0099275F /* PracTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7345CF21921A4F0099275F /* PracTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracTableViewUITests.swift; sourceTree = "<group>"; };
 		AE7345D121921A4F0099275F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE7345DD21921B8D0099275F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AE978A8C219B464C00117B7C /* Detalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detalle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				AE7345AF21921A4D0099275F /* AppDelegate.swift */,
-				AE7345B121921A4D0099275F /* ViewController.swift */,
 				AE7345B321921A4D0099275F /* Main.storyboard */,
 				AE7345B621921A4F0099275F /* Assets.xcassets */,
 				AE7345B821921A4F0099275F /* LaunchScreen.storyboard */,
 				AE7345BB21921A4F0099275F /* Info.plist */,
+				AE7345DD21921B8D0099275F /* TableViewController.swift */,
+				AE978A8C219B464C00117B7C /* Detalle.swift */,
 			);
 			path = PracTableView;
 			sourceTree = "<group>";
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7345B221921A4D0099275F /* ViewController.swift in Sources */,
+				AE978A8D219B464C00117B7C /* Detalle.swift in Sources */,
 				AE7345B021921A4D0099275F /* AppDelegate.swift in Sources */,
+				AE7345DE21921B8D0099275F /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +436,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upm.PracTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +455,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PracTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.upm.PracTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
